@@ -10,7 +10,7 @@ def ensure_directory(path):
     else:
         logging.info(f"Directory already exists: {path}")
 
-results_directory = './data/results'
+results_directory = '/users/home/ygu27/cifar/MIA/data/results'
 ensure_directory(results_directory)  # Ensure the directory exists
 
 csv_files = [os.path.join(results_directory, file) for file in os.listdir(results_directory) if file.endswith('.csv')]
@@ -33,7 +33,7 @@ for index in correct_counts:
     correct_rate[index] = correct_counts[index] / total_files
 
 # Optionally print the correct rate for each index
-privacy_score_dir = './data/privacy_score'
+privacy_score_dir = '/users/home/ygu27/cifar/MIA/data/privacy_score'
 ensure_directory(privacy_score_dir)
 privacy_score_addr = os.path.join(privacy_score_dir,'scores.csv')
 
