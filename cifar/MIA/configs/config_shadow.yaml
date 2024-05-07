@@ -1,0 +1,26 @@
+data:
+  gpu: 0
+  num_workers: 3
+  in_dataset: ./data/tmp_shadow/cifar_in.beton
+  val_dataset: ./data/tmp_shadow/cifar_test.beton
+  out_dataset: ./data/tmp_shadow/cifar_out.beton
+  shadow_model_number: 256
+  model_folder: ./data/models_shadow/
+  index_folder: ./data/tmp_shadow/
+  dataset_folder: ./data/tmp_shadow/
+  results_folder: ./data/obs/
+  out_dataset_index: ./data/tmp_shadow/out.npy
+  in_dataset_index: ./data/tmp_shadow/in.npy
+
+training:
+  batch_size: 512
+  epochs: 24
+  lr: 0.5
+  momentum: 0.9
+  lr_peak_epoch: 5
+  momentum: 0.9
+  weight_decay: 5e-4
+  label_smoothing: 0.1
+  lr_tta: true
+  num_workers: 3
+  in_model_save_path: ./data/models_shadow/model_in.pth
