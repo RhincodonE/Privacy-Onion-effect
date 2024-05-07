@@ -36,6 +36,7 @@ You need to adjust the absolute paths in the following files to your specific ab
 
 - `cifar/MIA/configs/config_attack.yaml`
 - `cifar/MIA/scripts/static.py`
+- `cifar/MIA/scripts/privacy_score.py`
 
 ## Run Experiment
 
