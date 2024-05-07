@@ -6,7 +6,7 @@ chmod +x ./run_generate_obs.sh
 
 chmod +x ./run_generate_attack_results.sh
 
-#./run_train_shadow.sh
+./run_train_shadow.sh
 
 ./run_generate_obs.sh
 
